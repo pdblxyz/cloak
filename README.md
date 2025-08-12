@@ -16,7 +16,7 @@ Local-first minimal desktop browser focused on privacy. Runs entirely on your ma
 
 ### Build and Run
 ```powershell
-cd minimal_browser
+cd cloak_browser
 cargo run
 ```
 
@@ -29,7 +29,7 @@ Default homepage is DuckDuckGo. Use the address bar to navigate or search. The t
 
 ### Persistence (where data is stored)
 - App data directory (profile, tabs/bookmarks/history):
-  - Windows: `%APPDATA%/com/minimal/browser/` (from Rust `directories::ProjectDirs::data_dir()`)
+  - Windows: `%APPDATA%/com/cloak/browser/` (from Rust `directories::ProjectDirs::data_dir()`)
   - File: `profile.json`
 - WebView (cookies/localStorage/cache):
   - Windows: `%LOCALAPPDATA%/com/minimal/browser/wv2_profile/` (set via `WEBVIEW2_USER_DATA_FOLDER`)
@@ -137,7 +137,7 @@ A lightweight, privacy-focused web browser built with Rust and WebView technolog
 ### Build from Source
 ```bash
 git clone <repository-url>
-cd minimal_browser
+cd cloak_browser
 cargo build --release
 ```
 
